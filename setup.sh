@@ -6,6 +6,7 @@ DESKTOP_FILE="$APP_NAME.desktop"
 SCRIPT_DIR=$(dirname "$(realpath "$0")")
 EXECUTABLE_DIR="$SCRIPT_DIR/dist"
 EXECUTABLE="$EXECUTABLE_DIR/$APP_NAME"
+ICON_PATH="$SCRIPT_DIR/resources/icons/screenshooter.ico"
 DESKTOP_FILE_PATH="$SCRIPT_DIR/$DESKTOP_FILE"
 
 # Check if the executable exists
@@ -21,7 +22,7 @@ cat > $DESKTOP_FILE_PATH <<EOL
 Name=Screenshooter
 Comment=Take a screenshot and copy to clipboard
 Exec=$EXECUTABLE
-Icon=applications-graphics
+Icon=$ICON_PATH
 Terminal=false
 Type=Application
 Categories=Utility;

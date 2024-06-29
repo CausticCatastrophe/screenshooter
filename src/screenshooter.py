@@ -52,13 +52,9 @@ class ScreenCaptureApp:
     def select_monitor(self, monitor):
         self.monitor = monitor
         self.selection_window.destroy()
-        self.capture_screen()
+        self.root.after(300, self.capture_screen)  # Wait for 200ms before capturing the screen
 
     def capture_screen(self):
-        # Wait for the selection window to close before capturing the screen
-        self.root.after(200, self.capture_screen_after_delay)
-
-    def capture_screen_after_delay(self):
         # Take a full-screen screenshot of the selected monitor
         self.full_screen_image = ImageGrab.grab(bbox=(self.monitor.x, self.monitor.y, self.monitor.width + self.monitor.x, self.monitor.height + self.monitor.y))
 
