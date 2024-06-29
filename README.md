@@ -8,7 +8,6 @@ Screenshooter is a simple and efficient tool for capturing screenshots on Linux.
 - [Installation](#installation)
 - [Usage](#usage)
 - [Configuration](#configuration)
-- [Contributing](#contributing)
 - [License](#license)
 
 ## Features
