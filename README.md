@@ -1,6 +1,6 @@
 # Screenshooter
 
-Screenshooter is a simple and efficient tool for capturing screenshots on Linux. It allows users to quickly take rectagle selection screenshots and copy them to the clipboard.
+Screenshooter is a simple tool for capturing screenshots on Linux. It allows users to quickly take rectagle selection screenshots and copy them to the clipboard.
 
 ## Table of Contents
 
